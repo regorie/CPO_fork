@@ -9,7 +9,7 @@ import json
 # JSONL file list
 # UltraFeedback: https://huggingface.co/datasets/openbmb/UltraFeedback
 # UltraSafety: https://huggingface.co/datasets/openbmb/UltraSafety
-jsonl_files = ["evol_instruct.jsonl", "flan.jsonl", "truthful_qa.jsonl","false_qa.jsonl", "sharegpt.jsonl", "ultrachat.jsonl"]
+jsonl_files = ["./data/evol_instruct.jsonl", "./data/flan.jsonl", "./data/truthful_qa.jsonl","./data/false_qa.jsonl", "./data/sharegpt.jsonl", "./data/ultrachat.jsonl"]
 
 # Build the result list
 results = []
