@@ -11,7 +11,7 @@ deepspeed --num_gpus=8 ./src/CPSFT/cpsft/train_sft.py\
  --output_dir /data/checkpoints/mistral_sft/ \
  --eval_steps 20 \
  --save_steps 100 \
- --base_model /model/mistral-7b-hf \
+ --base_model /mistralai/Mistral-7B-Instruct-v0.2 \
  --prompt_template_name mistral_delete
 
 
