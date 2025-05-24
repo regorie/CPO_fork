@@ -41,8 +41,8 @@ class DataArguments:
 
 @dataclass
 class TrainingArguments(transformers.TrainingArguments):
-    per_device_train_batch_size: int = field(default=8)
-    gradient_accumulation_steps: int = field(default=32)
+    per_device_train_batch_size: int = field(default=4)
+    gradient_accumulation_steps: int = field(default=64)
     gradient_checkpointing: bool = field(default=True)
     warmup_steps: int = field(default=100)
     num_train_epochs: int = field(default=3)
