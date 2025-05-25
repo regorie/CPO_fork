@@ -5,7 +5,7 @@ pip install deepspeed
 pip install peft
 pip install -U transformers
 
-deepspeed --num_gpus=1 ./src/CPSFT/cpsft/train_sft.py\
+deepspeed --num_gpus=2 ./src/CPSFT/cpsft/train_sft.py\
  --data_path ./H2_sft.json \
  --deepspeed ./src/CPSFT/cpsft/deepspeed_config/ZeRO_3.json \
  --output_dir ./data/checkpoints/mistral_sft/ \

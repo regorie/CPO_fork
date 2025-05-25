@@ -1,7 +1,7 @@
-H2_sft.json
 data/evol_instruct.jsonl
 data/false_qa.jsonl
 data/flan.jsonl
 data/sharegpt.jsonl
 data/truthful_qa.jsonl
 data/ultrachat.jsonl
+src/CDPO/data_preparation/

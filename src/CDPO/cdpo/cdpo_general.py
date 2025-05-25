@@ -11,10 +11,10 @@ from transformers import TrainingArguments
 from trl import DPOTrainer
 from datasets import load_dataset
 
-train_dataset = load_dataset("json", data_files="demo.json", split='train')
+train_dataset = load_dataset("json", data_files="./ultracombined.json", split='train')
 
 model, tokenizer = FastLanguageModel.from_pretrained(
-    model_name = "/home/model",      # Local 4bit-mistral model
+    model_name = "ksy2000/mistral-7B-Instruct-v0.2-csft",      # Local 4bit-mistral model
     max_seq_length = 2048,
     dtype = None,       # Automatically determines whether BF16 is enabled
     load_in_4bit = True,

@@ -20,7 +20,8 @@ for file_name in jsonl_files:
         data = file.readlines()
 
     # Parse each piece of data
-    for line in data:
+    for i, line in enumerate(data):
+        if i%2!=0: continue
         json_data = json.loads(line)
         instruction = json_data["instruction"]
         completions = json_data["completions"]
@@ -45,5 +46,5 @@ for file_name in jsonl_files:
             results.append(x)
 print(len(results))
 # Write the result to a JSON file
-with open('H2_sft.json', 'w') as file:
+with open('Half_B_sft.json', 'w') as file:
     json.dump(results, file, indent=4)
